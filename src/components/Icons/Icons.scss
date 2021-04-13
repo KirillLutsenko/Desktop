@@ -1,0 +1,119 @@
+.icons {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.icon {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: 0 20px 20px 0;
+  width: 100px;
+  border-radius: 5px;
+  cursor: pointer;
+  overflow: hidden;
+  transition: box-shadow 0.3s ease;
+
+  &:hover {
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.5),
+      -23px 0 20px -23px rgba(0, 0, 0, 0.8),
+      23px 0 20px -23px rgba(0, 0, 0, 0.8),
+      0 0 40px rgba(0, 0, 0, 0.3);
+  }
+
+  &__logo {
+    width: 100px;
+    height: 85px;
+    background: url('../../images/icon.png') center no-repeat;
+    background-size: 100%;
+  }
+
+  &__text {
+    font-size: 12px;
+    font-weight: 600;
+    white-space: nowrap;
+    overflow: hidden;
+    padding: 2px 5px;
+    text-overflow: ellipsis;
+  }
+}
+
+@media screen and (max-width: 813px) {
+  .icons {
+    width: 780px;
+    padding-left: 55px;
+  }
+
+  .icon {
+    width: 75px;
+    margin: 0 10px 10px 0;
+
+    &__logo {
+      width: 75px;
+      height: 60px;
+    }
+
+    &__text {
+      font-size: 11px;
+      font-weight: 600;
+    }
+  }
+
+  .icons > *:nth-child(8n) {
+    margin-right: 0;
+  }
+}
+
+@media screen and (max-width: 668px) {
+  .icons {
+    width: 630px;
+    padding-left: 20px;
+  }
+
+  .icons > *:nth-child(8n) {
+    margin-right: 10px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .icons {
+    width: 500px;
+  }
+
+  .icon {
+    width: 60px;
+
+    &__logo {
+      width: 50px;
+      height: 42.5px;
+    }
+
+    &__text {
+      font-size: 9px;
+    }
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .icons {
+    width: 370px;
+    padding-left: 15px;
+  }
+
+  .icon {
+    width: 60px;
+
+    &__logo {
+      width: 50px;
+      height: 42.5px;
+    }
+
+    &__text {
+      font-size: 9px;
+    }
+  }
+
+  .icons > *:nth-child(5n) {
+    margin-right: 0;
+  }
+}
