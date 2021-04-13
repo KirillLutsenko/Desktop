@@ -77,7 +77,8 @@
 
 @media screen and (max-width: 600px) {
   .icons {
-    width: 500px;
+    width: 530px;
+    padding-left: 30px;
   }
 
   .icon {
@@ -94,26 +95,24 @@
   }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 415px) {
   .icons {
     width: 370px;
     padding-left: 15px;
   }
 
-  .icon {
-    width: 60px;
+  .icons > *:nth-child(5n) {
+    margin-right: 0;
+  }
+}
 
-    &__logo {
-      width: 50px;
-      height: 42.5px;
-    }
-
-    &__text {
-      font-size: 9px;
-    }
+@media screen and (max-width: 321px) {
+  .icons {
+    width: 300px;
+    padding-left: 17px;
   }
 
   .icons > *:nth-child(5n) {
-    margin-right: 0;
+    margin-right: 10px;
   }
 }
