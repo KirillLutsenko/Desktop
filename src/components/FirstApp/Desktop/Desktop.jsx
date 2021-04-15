@@ -5,7 +5,7 @@ import { SortMenu } from '../SortMenu/SortMenu';
 import './Desktop.scss';
 
 export const Desktop = ({ icons, setIcons }) => (
-  <div className="app__desktop desktop">
+  <div className="first-app__desktop desktop">
     <Icons icons={icons} />
 
     <SortMenu

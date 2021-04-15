@@ -1,9 +1,8 @@
 import React, { useState, useEffect } from 'react';
-import { getInfo } from './api';
-import './App.scss';
-import { Desktop } from './components/Desktop/Desktop';
+import { Desktop } from './Desktop/Desktop';
+import { getInfo } from '../../api';
 
-function App() {
+export const FirstApp = () => {
   const [icons, setIcons] = useState([]);
 
   useEffect(() => {
@@ -12,7 +11,7 @@ function App() {
   }, []);
 
   return (
-    <div className="app">
+    <div className="first-app">
       {(icons.length) ? (
         <Desktop
           icons={icons}
@@ -23,6 +22,4 @@ function App() {
       )}
     </div>
   );
-}
-
-export default App;
+};

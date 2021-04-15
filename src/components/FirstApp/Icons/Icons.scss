@@ -24,13 +24,13 @@
   &__logo {
     width: 100px;
     height: 85px;
-    background: url('../../images/icon.png') center no-repeat;
+    background: url('../../../images/icon.png') center no-repeat;
     background-size: 100%;
   }
 
   &__text {
     font-size: 12px;
-    font-weight: 600;
+    font-weight: 700;
     white-space: nowrap;
     overflow: hidden;
     padding: 2px 5px;
@@ -55,7 +55,8 @@
 
     &__text {
       font-size: 11px;
-      font-weight: 600;
+      font-family: 'Lato', sans-serif;
+      font-weight: 700;
     }
   }
 

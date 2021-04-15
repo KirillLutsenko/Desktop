@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
-import { getInfo } from '../../api';
+import { getInfo } from '../../../api';
 import './SortMenu.scss';
 
 export const SortMenu = ({ icons, setIcons }) => {
