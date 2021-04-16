@@ -24,7 +24,7 @@
 - It is allowed to use bootstrap, jquery, any jquery-libraries.
 
 **Description**
-- Tech stack: React(Route, Hooks, Styled-Components), BEM, SASS.
+- Tech stack: React(Route, Hooks, Styled-Components), BEM, SCSS.
 - Fully responsive layout(mobiles, tablets, laptops, high screens)
 - All buttons are interactive.
 
