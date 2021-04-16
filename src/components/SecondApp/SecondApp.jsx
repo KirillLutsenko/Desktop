@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Block } from './components/Block/Block';
 import { Menu } from './components/Menu/Menu';
-import { DesktopField } from './StyledComponents';
+import { DesktopField, SecondAppWrapper } from './StyledComponents';
 
 export const SecondApp = () => {
   const [menuVisibility, setMenuVisibility] = useState(false);
@@ -15,7 +15,7 @@ export const SecondApp = () => {
   };
 
   return (
-    <div
+    <SecondAppWrapper
       className="second-app"
       onClick={closeMenu}
       onKeyDown={closeMenu}
@@ -40,6 +40,6 @@ export const SecondApp = () => {
           />
         )}
       </DesktopField>
-    </div>
+    </SecondAppWrapper>
   );
 };

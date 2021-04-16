@@ -1,5 +1,16 @@
 import styled from 'styled-components';
 
+export const SecondAppWrapper = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  width: 100%;
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  background-color: #c91212;
+`;
+
 export const DesktopField = styled.div`
   display: flex;
   flex-wrap: wrap;

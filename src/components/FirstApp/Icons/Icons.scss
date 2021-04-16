@@ -42,6 +42,10 @@
   .icons {
     width: 780px;
     padding-left: 55px;
+
+    > *:nth-child(8n) {
+      margin-right: 0;
+    }
   }
 
   .icon {
@@ -59,20 +63,16 @@
       font-weight: 700;
     }
   }
-
-  .icons > *:nth-child(8n) {
-    margin-right: 0;
-  }
 }
 
 @media screen and (max-width: 668px) {
   .icons {
     width: 630px;
     padding-left: 20px;
-  }
 
-  .icons > *:nth-child(8n) {
-    margin-right: 10px;
+    > *:nth-child(8n) {
+      margin-right: 10px;
+    }
   }
 }
 
@@ -100,10 +100,10 @@
   .icons {
     width: 370px;
     padding-left: 15px;
-  }
 
-  .icons > *:nth-child(5n) {
-    margin-right: 0;
+    > *:nth-child(5n) {
+      margin-right: 0;
+    }
   }
 }
 
@@ -111,9 +111,9 @@
   .icons {
     width: 300px;
     padding-left: 17px;
-  }
 
-  .icons > *:nth-child(5n) {
-    margin-right: 10px;
+    > *:nth-child(5n) {
+      margin-right: 10px;
+    }
   }
 }

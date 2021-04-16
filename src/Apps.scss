@@ -6,8 +6,7 @@
   padding: 0;
 }
 
-.first-app,
-.second-app {
+.first-app {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -15,8 +14,4 @@
   width: 100%;
   font-family: 'Lato', sans-serif;
   font-weight: 400;
-}
-
-.second-app {
-  background-color: #c91212;
 }
