@@ -10,8 +10,18 @@ export const SecondApp = () => {
   const newArray = Array(14).fill(null);
   const blocks = newArray.map((number, index) => ({ id: index }));
 
+  const closeMenu = () => {
+    setMenuVisibility(false);
+  };
+
   return (
-    <div className="second-app">
+    <div
+      className="second-app"
+      onClick={closeMenu}
+      onKeyDown={closeMenu}
+      role="button"
+      tabIndex="0"
+    >
       <DesktopField>
         {blocks.map((block, index) => (
           <Block
@@ -24,9 +34,9 @@ export const SecondApp = () => {
         ))}
         {menuVisibility && (
           <Menu
-            setMenuVisibility={setMenuVisibility}
             xCoord={xCoord}
             yCoord={yCoord}
+            closeMenu={closeMenu}
           />
         )}
       </DesktopField>

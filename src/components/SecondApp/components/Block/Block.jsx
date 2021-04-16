@@ -4,6 +4,7 @@ import { ClickBlock } from '../../StyledComponents';
 
 export const Block = ({ index, setXCoord, setYCoord, setMenuVisibility }) => {
   const onClick = (e) => {
+    e.stopPropagation();
     const parent = e.target.parentNode.getBoundingClientRect();
     const element = e.target.getBoundingClientRect();
 
